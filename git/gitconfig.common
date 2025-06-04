@@ -1,5 +1,5 @@
 [hub]
-    protocol = https
+    protocol = ssh
 [alias]
     co = checkout
     promote = !$ZSH/bin/git-promote
@@ -7,10 +7,10 @@
     rank-contributors = !$ZSH/bin/git-rank-contributors
     count = !git shortlog -sn
 [color]
+    ui = true
     diff = auto
     status = auto
     branch = auto
-    ui = true
 [core]
     excludesfile = ~/.gitignore
     editor = vim

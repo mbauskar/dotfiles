@@ -1,0 +1,6 @@
+[user]
+    name = FirstName LastName
+    email = firstname.lastname@example.com
+
+[include]
+    path = ~/workspace/dotfiles/git/gitconfig.common
