@@ -15,3 +15,5 @@ config.keys = {
     {key="d", mods="CTRL|SHIFT", action=wezterm.action{SplitVertical={domain="CurrentPaneDomain"}}},
     {key="e", mods="CTRL|SHIFT", action=wezterm.action{SplitHorizontal={domain="CurrentPaneDomain"}}},
 }
+
+return config
