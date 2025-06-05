@@ -1,11 +1,17 @@
 [hub]
     protocol = ssh
 [alias]
-    co = checkout
+    parent = rev-parse --abbrev-ref --symbolic-full-name @{u}
+    last = log -1 HEAD
+    unstage = reset HEAD --
+    remotes = remote -v
+    plog = !sh ~/workspace/dotfiles/bin/plog.sh
+    contributors = shortlog --summary --numbered
     promote = !$ZSH/bin/git-promote
     wtf = !$ZSH/bin/git-wtf
     rank-contributors = !$ZSH/bin/git-rank-contributors
     count = !git shortlog -sn
+    mylog = "!f() { git log --author=\"{git config user.name}\" --oneline --graph --decorate --all -- \"$@\"; }; f"
 [color]
     ui = true
     diff = auto

@@ -1,0 +1,20 @@
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# add custom key bindings
+
+keybind = ctrl+shift=new_split:right
+
+font-size = 10
+theme = "Abernathy"
+
+# window width & height
+window-width = 255
+window-height = 55
+
+# window position
+window-position-x = 0
+window-position-y = 0

@@ -20,4 +20,10 @@ repos:
     hooks:
       - id: yamllint
 
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.11.0-1
+    hooks:
+      - id: shfmt
+        args: [--indent=2, --simplify]
+
 default_stages: [pre-commit]
