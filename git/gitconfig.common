@@ -1,17 +1,16 @@
 [hub]
     protocol = ssh
 [alias]
-    parent = rev-parse --abbrev-ref --symbolic-full-name @{u}
     last = log -1 HEAD
-    unstage = reset HEAD --
     remotes = remote -v
+    unstage = reset HEAD --
+    count = !git shortlog -sn
     plog = !sh ~/workspace/dotfiles/bin/plog.sh
     contributors = shortlog --summary --numbered
-    promote = !$ZSH/bin/git-promote
-    wtf = !$ZSH/bin/git-wtf
+    mylog = !sh ~/workspace/dotfiles/bin/git-mylog.sh
     rank-contributors = !$ZSH/bin/git-rank-contributors
-    count = !git shortlog -sn
-    mylog = "!f() { git log --author=\"{git config user.name}\" --oneline --graph --decorate --all -- \"$@\"; }; f"
+    hardreset = !sh ~/workspace/dotfiles/bin/git-reset.sh
+    hardreset-upstream = !sh ~/workspace/dotfiles/bin/git-upstream-reset.sh
 [color]
     ui = true
     diff = auto
