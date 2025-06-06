@@ -13,3 +13,9 @@ alias link-gitconfig-personal="sudo ln -sf ~/workspace/dotfiles/git/gitconfig.pe
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# link all the functions
+source ~/workspace/dotfiles/functions/clipboard.sh
+source ~/workspace/dotfiles/functions/nvm.sh
+source ~/workspace/dotfiles/functions/pyenv.sh
+source ~/workspace/dotfiles/functions/secrets.sh
